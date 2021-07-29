@@ -1,17 +1,42 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reactDom from 'react-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const List = () =>{
+    return (
+        <ul>
+            <li>Item list</li>
+            <li>Item list</li>
+            <li>Item list</li>
+            <li>Item list</li>
+            <li>Item list</li>
+        </ul>
+    )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const Text = () => {
+    return(
+        <>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perspiciatis vel, excepturi et reiciendis quo voluptates quas consequatur ut maxime veniam voluptate officia quisquam laboriosam consectetur incidunt voluptas odit ratione.</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perspiciatis vel, excepturi et reiciendis quo voluptates quas consequatur ut maxime veniam voluptate officia quisquam laboriosam consectetur incidunt voluptas odit ratione.</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est perspiciatis vel, excepturi et reiciendis quo voluptates quas consequatur ut maxime veniam voluptate officia quisquam laboriosam consectetur incidunt voluptas odit ratione.</p>
+        </>
+    )
+}
+
+const Hi = () => {
+    return(
+        <h1>Hiiii</h1>
+    )
+}
+
+const App = () => {
+  return(
+    <div>
+        <List/>
+        <Text/>
+        <Hi/>
+    </div>
+  )
+}
+
+reactDom.render(<App/>,document.getElementById('root'))

@@ -107,10 +107,6 @@ body{
     cursor: pointer;
 }
 
-.menu {
-    display: none;
-}
-
 .search {
     grid-area: search;
     align-self: center;
@@ -140,6 +136,8 @@ body{
     padding-top: 20px;
 }
 
+/* ------ Search ------ */
+
 .btn-search {
     background: url(images/search-white.png) no-repeat;
     border: none;
@@ -162,6 +160,13 @@ body{
     justify-self: end;
     padding-left: 10px;
 }
+
+/* ------ Menu ------ */
+
+.menu {
+    display: none;
+}
+
 .open-mobile-menu{
     width: 25px;
     height: 25px;
@@ -238,6 +243,9 @@ body{
     border-radius: 4px;
     color: black;
 }
+
+/*------ Main -------*/
+
 .main{
     background-color: #f5f5f5;
     display: grid;

@@ -116,7 +116,7 @@ body{
     grid-template-columns: 8fr 1fr;
     grid-template-areas:
     "input btn";
-    justify-self: center;
+    justify-self: end;
     transition: 1s;
 }
 .search-input:focus {

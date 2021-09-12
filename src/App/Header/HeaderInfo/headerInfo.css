@@ -1,0 +1,52 @@
+.header-info-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.purchase-history {
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    background: url(./history.png) no-repeat ;
+    background-size: cover;
+    transition: 0.6s;
+}
+
+.purchase-history:hover{
+    box-shadow: 0 0 10px #3f51b5;
+    transition: 0.6s;
+}
+
+.like-history {
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    background: url(./like.png) no-repeat ;
+    background-size: cover;
+    position: relative;
+}
+
+.like-history > span {
+    transition: 0.6s;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    bottom: 12px;
+    left: 15px;
+    box-shadow: 0 0 10px rgb(182 210 231);
+    background: #3f51b5;
+    border-radius: 12px;
+    color: white;
+    font-size: 14px;
+    line-height: 24px;
+    
+}
+
+.like-history:hover > span {
+    transition: 0.6s;
+    box-shadow: 0 0 15px #3f51b5;
+}
+

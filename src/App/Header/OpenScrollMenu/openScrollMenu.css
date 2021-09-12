@@ -1,0 +1,20 @@
+.open-scroll-menu{
+    width: 25px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    grid-area: open-menu;
+    align-self: center;
+    cursor: pointer;
+}
+.open-scroll-menu > span:first-child,
+.open-scroll-menu > span:nth-child(2),
+.open-scroll-menu > span:last-child {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+}

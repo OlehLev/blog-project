@@ -1,8 +1,9 @@
 import React from 'react' 
+import "./openScrollMenu.css"
 
-const OpenMobileMenu = () => {
+const OpenScrollMenu = () => {
     return(
-        <div className="open-mobile-menu ">
+        <div className="open-scroll-menu">
             <span></span>
             <span></span>
             <span></span>
@@ -10,4 +11,4 @@ const OpenMobileMenu = () => {
     )
 }
 
-export default OpenMobileMenu
+export default OpenScrollMenu

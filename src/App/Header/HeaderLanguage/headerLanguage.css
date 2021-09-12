@@ -1,0 +1,42 @@
+
+
+@media(min-width: 992px) {
+    .header-language-box {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        grid-area: language;
+    }
+    .header-language-box > span {
+        position:absolute;
+        background: black;
+        width: 1px;
+        height: 25px;
+        left: 50%;
+        top: 50%;
+        transform: translate3d(-50%, -50%, 0px);
+    }
+
+    .header-language-menu {
+        align-self: center;
+        justify-self: center;
+        color: white;
+        background: rgb(182, 210, 231);
+        padding: 5px;
+        margin: 0 5px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.6s;
+    }
+    .header-language-menu:hover{
+        transition: 0.6s;
+        box-shadow: 0 0 10px #3f51b5;
+    }
+
+    .activ-language {
+        color: white;
+        background: #3f51b5;
+
+    }
+}

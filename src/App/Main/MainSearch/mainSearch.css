@@ -1,0 +1,36 @@
+.main-search-box {
+    display: grid;
+    grid-template-columns: 1fr 25px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 5px 15px;
+    transition: 0.6s;
+}
+
+.main-search-box:hover {
+    box-shadow: 0 0 5px inset #3f51b5;
+    transition: 0.6s;
+}
+
+.main-search-box:focus-within  {
+    box-shadow: 0 0 15px inset rgb(182, 210, 231);
+}
+
+.main-search-input {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.main-search-btn {
+    background: url(./search-white-1.png) no-repeat;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}

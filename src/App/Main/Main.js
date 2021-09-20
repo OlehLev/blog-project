@@ -1,4 +1,6 @@
 import React from 'react'
+import MainSearch from './MainSearch/MainSearch'
+import MainSort from './MainSort/MainSort'
 import PostList from './Posts/PostList'
 
 
@@ -6,57 +8,14 @@ const Main = () => {
     return(
         <main className="main">
 
-            <section className="main-sort">
-                <div className="container">
-                    <div className="row-main-sort">
-                        <ul className="filter-box hide-mobile">
-                            <li className="sort-name">Categories:</li>
-                            <li className="sort-items"><button className="sort-item active">All</button></li>
-                            <li className="sort-items"><button className="sort-item">Sport</button></li>
-                            <li className="sort-items"><button className="sort-item">Workout</button></li>
-                            <li className="sort-items"><button className="sort-item">Yoga</button></li>
-                            <li className="sort-items"><button className="sort-item">Nutrition</button></li>
-                            <li className="sort-items"><button className="sort-item">Life-hike</button></li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </section>
+            <MainSort/>
 
             <div className="container">
                 <div className="row-mein">
                     <PostList/>
                     <div className="main-right">
-                        <div className="main-search-box hide-tablet">
-                            <input type="text" placeholder="Search" className="main-search-input"/>
-                            <button className="main-search-btn"></button>
-                        </div>
-                        {/* <div className="main-categories-box">
-                            <div className="close-category hide-laptop">
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <p className="main-right-box-name">CATEGORIES</p>
-                            <div className="main-category-items">
-                                <a href="" className="main-category-item">
-                                    <p>Inovation</p>
-                                    <span>5</span>
-                                </a>
-                                <a href="" className="main-category-item">
-                                    <p>Sport</p>
-                                    <span>7</span>
-                                </a>
-                                <a href="" className="main-category-item">
-                                    <p>Lifehike</p>
-                                    <span>11</span>
-                                </a>
-                                <a href="" className="main-category-item">
-                                    <p>Test-drive</p>
-                                    <span>15</span>
-                                </a>
-                            </div>
-                        </div> */}
-
+                        <MainSearch/>
+                        
                         <div className="main-subscribe-box">
                             <p className="main-right-box-name">SUBSCRIBE</p>
                             <p className="main-subscribe-input-name">Name</p>
